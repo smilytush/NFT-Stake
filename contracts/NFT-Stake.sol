@@ -109,11 +109,4 @@ function getRewardAmount(Stake memory stake) public view returns (uint256) {
     return (stake.duration * stake.rewardRate) / 1 ether;
 }
 }
-// This contract allows users to stake their ERC721 NFT tokens for a set period of time (7 days, 14 days, 21 days, or 28 days) and earn ERC20 tokens as a reward. The amount of ERC20 tokens earned is determined by the duration of the stake, with longer stakes earning a higher reward rate.
-
-// The `stake` function transfers the NFT token and the appropriate amount of ERC20 tokens from the staker to the contract. The details of the stake are stored in a `Stake` struct and added to a `stakes` mapping.
-
-// The `unstake` function allows the staker to retrieve their NFT token and the earned ERC20 tokens once the stake has matured. The `claim` function allows the staker to retrieve only the earned ERC20 tokens.
-
-// The `getRewardRate` function calculates the reward rate for a given duration. The `getRewardAmount` function calculates the total amount of ERC20 tokens earned for a given stake.
 
